@@ -1,31 +1,27 @@
 # Todo list Application
 ## Objective
-I am planning to build a simple to-do list application using Django. The application will allow users to:
+This is a simple to-do list application built using Django. The application allows users to:
 
 1. Add new tasks.
 2. View a list of tasks.
 
 ### Backend Development (Django)
 
-I will set up a Django project with a single model:
-- **Task**: Fields: Title (Text).
-
-I will implement functionality for:
+Functionality implemented includes:
 - Adding tasks.
 - Viewing a list of tasks.
 
 ### Frontend (HTML/CSS)
 
-I will use basic HTML and CSS to create:
+Basic HTML and CSS are used to create:
 - A form to add tasks.
 - A list view displaying tasks.
 
-### GitHub
-
-I will push my code to a public GitHub repository with:
-- A clear commit history.
-- A README file explaining how to set up and run the project.
-
 ## Usage
 
-Instructions on how to set up and run the project will be updated here once the implementation is complete.
+```python manage.py runserver```
+and go to http://127.0.0.1:8000/ for the index (home) page
+
+Insert the title in the input box and hit "add task"
+
+go to http://127.0.0.1:8000/tasks to view the tasks page
