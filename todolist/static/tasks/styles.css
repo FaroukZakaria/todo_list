@@ -1,0 +1,83 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0; /* Remove default body margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Keep the content fixed at the center */
+    top: 25%;
+    z-index: 1; /* Make sure it stays on top */
+}
+
+#view-tasks {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 50vh;
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 10px; /* Add space from the fixed content */
+    width: 100%;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+    padding: 10px;
+    width: 250px;
+    overflow-x: auto; /* Enable horizontal scrolling for long text */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+ul li:nth-child(odd) {
+    background-color: rgb(212, 212, 212);
+}
+
+ul li:nth-child(even) {
+    background-color: white;
+}
+
+#view-tasks button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#view-tasks button:hover {
+    background-color: #45a049;
+}
+
+#content form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #006eff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#content form button:hover {
+    background-color: #0056e0;
+}
+
+#content form input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+}
