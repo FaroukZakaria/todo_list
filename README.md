@@ -19,6 +19,16 @@ Basic HTML and CSS are used to create:
 
 ## Setting up the project
 To set up the project, follow these steps:
+Make sure you have Django installed first before you set up the project:
+```bash
+pip install django
+```
+
+Make a new project:
+```bash
+django-admin startproject todolist
+cd todolist
+```
 
 1. **Create a new Django app**:
     ```bash
