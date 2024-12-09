@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="static/tasks/styles.css">
+    <script src='static/tasks/fetchTasks.js'></script>
+    <script src='static/tasks/addTask.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', fetchTasks);
+    </script>
+</head>
+<body>
+    <div id="content">
+        <h1>To-Do List</h1>
+        <form onsubmit="addTask(event)">
+            <input type="text" id="task-title" placeholder="Task title" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <div id="view-tasks">
+            <a href="/tasks">
+                <button type="button">View Lists</button>
+            </a>
+        </div>
+    </div>
+    <ul id="task-list"></ul>
+</body>
+</html>
